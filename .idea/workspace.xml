@@ -13,8 +13,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="259d7b44-54e7-4eff-8aaf-cf45b0ebe9d0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/channel.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/keyboard_state.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/lenia_display.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/lenia_state.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/display/mouse_input_state.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fft/convolver.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fft/fft.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fft/ndarray_fft.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/growth_functions/gaussian.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/growth_functions/growth_function.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/growth_functions/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/growth_functions/polynomial.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/growth_functions/step.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/growth_functions/trapezoidal.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/gaussian.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/high_step.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/kernel.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/kernel_core.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/polynomial.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/step.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/trapezoidal.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kernels/utils.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parameters.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presets/default_lenia.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presets/game_of_life.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presets/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presets/smooth_life.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systems/expanded_lenia.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systems/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systems/standard_lenia.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/systems/system.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -26,11 +59,21 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="4bwjt8eo" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -49,6 +92,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Coding/Rust/lenia&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,9 +101,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Coding\Rust\lenia\src\presets" />
+      <recent name="D:\Coding\Rust\lenia\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run --package lenia --bin lenia" />
+      <option name="command" value="run --release --package lenia --bin lenia" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="emulateTerminal" value="false" />
       <option name="channel" value="DEFAULT" />
@@ -89,10 +139,34 @@
       <updated>1697328575959</updated>
       <workItem from="1697328577205" duration="670000" />
       <workItem from="1697329641108" duration="496000" />
+      <workItem from="1698703761724" duration="2714000" />
+      <workItem from="1698943546354" duration="5244000" />
+      <workItem from="1698979135603" duration="6959000" />
+      <workItem from="1698987114704" duration="7226000" />
+      <workItem from="1699024622338" duration="37180000" />
+      <workItem from="1699065152956" duration="46309000" />
+      <workItem from="1699235876871" duration="1385000" />
+      <workItem from="1699239667906" duration="17909000" />
+      <workItem from="1699319161074" duration="27738000" />
+      <workItem from="1699415018842" duration="13828000" />
+      <workItem from="1705241691644" duration="40000" />
+      <workItem from="1705242909384" duration="421000" />
+      <workItem from="1707482150675" duration="1432000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

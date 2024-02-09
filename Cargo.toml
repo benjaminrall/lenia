@@ -7,4 +7,9 @@ edition = "2021"
 
 [dependencies]
 pixel-canvas = "0.2.3"
-ndarray = "0.15.6"
+rustfft = "6.1.0"
+rayon = "1.8.0"
+
+[dependencies.ndarray]
+version = "0.15.6"
+features = ["rayon"]

@@ -1,25 +1,14 @@
-use pixel_canvas::{Canvas, Color};
-use pixel_canvas::input::MouseState;
+use lenia::display::LeniaDisplay;
+use lenia::presets::{DefaultLeniaPreset, GameOfLifePreset};
 
 fn main() {
-    let canvas = Canvas::new(512, 512)
-        .title("Test")
-        .state(MouseState::new())
-        .input(MouseState::handle_input);
+    let channel_shape = vec![720, 1280];
 
-    canvas.render(|mouse, image| {
-        let width = image.width();
-        for (y, row) in image.chunks_mut(width).enumerate() {
-            for (x, pixel) in row.iter_mut().enumerate() {
-                let dx = x as i32 - mouse.x;
-                let dy = y as i32 - mouse.y;
-                let dist = dx * dx + dy * dy;
-                *pixel = Color {
-                    r: if dist < 128 * 128 { dy as u8 } else { 0 },
-                    g: if dist < 128 * 128 { dx as u8 } else { 0 },
-                    b: 0
-                }
-            }
-        }
-    });
+    let system = DefaultLeniaPreset::new(channel_shape.clone(), 48);
+
+    //let system = GameOfLifePreset::new(channel_shape);
+
+    let display = LeniaDisplay::new_scaled(system, 1);
+
+    display.render();
 }
