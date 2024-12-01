@@ -12,7 +12,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="259d7b44-54e7-4eff-8aaf-cf45b0ebe9d0" name="Changes" comment="" />
+    <list default="true" id="259d7b44-54e7-4eff-8aaf-cf45b0ebe9d0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +23,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -50,15 +53,17 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Coding/Rust/rust-ray-tracing&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/University/Year 3/Advanced Computer Graphics&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -73,6 +78,7 @@
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --release --package lenia --bin lenia" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
       <option name="emulateTerminal" value="false" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -80,7 +86,6 @@
       <option name="withSudo" value="false" />
       <option name="buildTarget" value="REMOTE" />
       <option name="backtrace" value="SHORT" />
-      <envs />
       <option name="isRedirectInput" value="false" />
       <option name="redirectInputPath" value="" />
       <method v="2">
@@ -118,6 +123,11 @@
       <workItem from="1707487766612" duration="317000" />
       <workItem from="1707772241570" duration="599000" />
       <workItem from="1709261411100" duration="25000" />
+      <workItem from="1713481714719" duration="51000" />
+      <workItem from="1727893229192" duration="21000" />
+      <workItem from="1727893607151" duration="14000" />
+      <workItem from="1727893681200" duration="35000" />
+      <workItem from="1727896775558" duration="3966000" />
     </task>
     <servers />
   </component>
