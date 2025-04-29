@@ -65,7 +65,7 @@ impl LeniaDisplay {
                                 col /= self.scale;
                             }
 
-                            self.system.0.set_cell(0, &[row, col], 1.);
+                            self.system.0.set_cell(0, &[row, col], 255.);
                         }
                     }
                 }
